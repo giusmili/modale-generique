@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modale</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+</head>
+<body>
+    <!-- "Bouton" d'ouverture de la modale -->
+    <header>
+        <h1>
+            ⚡️ Utiliser les modales : méthode générique<br>
+            <strong>
+                <ion-icon name="logo-github"></ion-icon>
+                Dépôt gitHub
+            </strong>
+        </h1>
+      
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" role="button" data-target="#modal" data-toggle="modal" class="button button-outline">Ouvrir la modale 1</a>
+            </li>
+            <li>
+                
+                <a href="#" role="button" data-target="#modal-add" data-toggle="modal" class="button button-outline">Ouvrir la modale 2</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+  
+    <!-- Modale -->
+    <div class="modal" id="modal" role="dialog">
+        <div class="modal-content">
+            <button type="button" class="modal-close" data-dismiss="dialog">&times;</button>
+            <div class="modal-header">
+                <h2>
+                    <ion-icon name="logo-octocat"></ion-icon>
+                    Modale 1
+                </h2>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates excepturi sint, veritatis officia laborum temporibus. Beatae neque reprehenderit ipsum numquam facilis repudiandae iste explicabo voluptatum corrupti harum. Sunt, asperiores.
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="button" role="button" data-dismiss="dialog">Fermer</a>
+                <a href="#" class="button" role="button">Valider</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-add" role="dialog">
+        <div class="modal-content">
+            <button type="button" class="modal-close" data-dismiss="dialog">&times;</button>
+            <div class="modal-header">
+                <h2>
+                    <ion-icon name="logo-android"></ion-icon>
+                    Modale 2</h2>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates excepturi sint, veritatis officia laborum temporibus. Beatae neque reprehenderit ipsum numquam facilis repudiandae iste explicabo voluptatum corrupti harum. Sunt, asperiores.
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="button" role="button" data-dismiss="dialog">Fermer</a>
+                <a href="#" class="button" role="button">Valider</a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>
+        &copy; - Giusmili - 2023
+    </p>
+</footer>
+    <script type="module" src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

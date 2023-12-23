@@ -1,0 +1,106 @@
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    display:grid;
+    grid-template-rows: repeat(auto, 1fr, auto);
+    min-height: 100vh;
+}
+ul,ol{
+    list-style-type: none;
+}
+button, button:hover{
+    background: none;
+    border: 0;
+    color: #222;
+    font-size: 1.6rem;
+}
+ion-icon{
+    vertical-align: -.2rem;
+}
+h1,h2,h3{
+    margin: 0;
+}
+/* theme */
+header *{
+    text-align: center;
+    font-weight: normal;
+    line-height: 8rem;
+    color: #222;
+}
+
+nav li{
+    display: inline-block;
+}
+nav ul{
+    text-align: center;
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.modal.show{
+    visibility: visible;
+    opacity: 1;
+}
+.modal-header h2{
+    font-size: 1.9rem;
+    line-height: 3.5rem;
+    color: #222;
+
+}
+header h1 strong{
+    font-weight: normal;
+    font-size: 1.6rem;
+}
+.modal-content{
+    background-color: white;
+    max-width: 60vw;
+    margin: auto;
+    flex: 1;
+    position: relative;
+}
+
+.modal-close{
+    position: absolute;
+    top: -2px;
+    right:11px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.modal-header{
+    padding-left: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-body{
+    padding: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-footer{
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+
+
+.btn-close{
+    background-color: red;
+}
+
+footer p{
+    text-align: center;
+}
