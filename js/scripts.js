@@ -5,6 +5,7 @@ window.onload = () => {
    
 
     /* appel de la class */
+   
 
         User.modale()
 }
